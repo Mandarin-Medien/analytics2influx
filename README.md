@@ -29,11 +29,30 @@ Please not, that you cannot combine metrics from both APIs.
 You can either call `analytics2inlux` with commandline parameters or use the `export.sh` file to configure everything.
 
 Analytics API
-``
+```
 analytics2influx --metrics ga:pageviews,ga:sessions --dimensions ga:hostname --influxHost localhost --influxUser tester --influxPassword test  
-``
+```
 
 Realtime Reporting API
-``
+```
 analytics2influx --mode rt --rt_metrics ga:activeUsers --rt_dimensions rt:userType --influxHost localhost --influxUser tester --influxPassword test  
-``
+```
+
+#### Time-Ranges
+
+```
+// Fetch data from yesterday and send to Graphite
+analytics2influx
+```
+
+
+```
+// Fetch data from three days back -> today and send to Graphite
+analytics2influx 3
+```
+
+
+```
+// Send data for a specific date
+analytics2influx 2015-06-01
+```
