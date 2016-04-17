@@ -1,8 +1,9 @@
 {
   "name": "analytics2influx",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Exports metrics from Google Analytics and writes them to InfluxDB",
+  "main": ".lib/analytics2influx.js",
+  "bin": "./bin/start.js",
   "dependencies": {
     "async": "^2.0.0-rc.3",
     "googleapis": "^5.0.0",
@@ -15,6 +16,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": {
+    "name" : "Steffen Konerow",
+    "url" : "https://www.mandarin-medien.de"
+  },
+  "license": "Apache-2.0"
 }
