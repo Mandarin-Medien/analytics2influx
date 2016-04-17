@@ -36,7 +36,7 @@ analytics2influx --metrics ga:pageviews,ga:sessions --dimensions ga:hostname --i
 
 Realtime Reporting API
 ```
-analytics2influx --mode rt --rt_metrics ga:activeUsers --rt_dimensions rt:userType --influxHost localhost --influxUser tester --influxPassword test  
+analytics2influx --mode rt --rt_metrics rt:activeUsers --rt_dimensions rt:userType --influxHost localhost --influxUser tester --influxPassword test  
 ```
 
 #### Time-Ranges
