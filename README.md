@@ -42,13 +42,13 @@ analytics2influx --mode rt --rt_metrics rt:activeUsers --rt_dimensions rt:userTy
 #### Time-Ranges
 
 ```
-// Fetch data from yesterday and send to Graphite
+// Fetch data from yesterday and send to InfluxDB
 analytics2influx
 ```
 
 
 ```
-// Fetch data from three days back -> today and send to Graphite
+// Fetch data from three days back -> today and send to InfluxDB
 analytics2influx 3
 ```
 
